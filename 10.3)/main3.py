@@ -5,7 +5,7 @@ dictionary = {}
 for line in data:
     words = line.strip().split(' - ')
     if len(words) < 2:
-        continue # skip this line if it doesn't have at least two elements
+        continue
     eng_word = words[0]
     rus_words = words[1].split(', ')
     for rus_word in rus_words:
